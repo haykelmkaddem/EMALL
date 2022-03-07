@@ -1,0 +1,50 @@
+@import "base/typography.scss";
+@import "abstracts/variables";
+
+
+@import "vendors/bootstrap/bootstrap.scss";
+
+@import "layout/navbar";
+@import "layout/sidebar";
+
+@import "components/inputs";
+@import "components/buttons";
+@import "components/cards";
+@import "components/dropdown";
+@import "components/carousel";
+@import "components/images";
+
+@import "pages/product-detail";
+@import "pages/inscription";
+@import "pages/shop";
+@import "pages/profile";
+
+
+
+.myscrollable-list{
+    overflow: scroll;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+}
+::-webkit-scrollbar {
+    height: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb:horizontal {
+    background: rgba($color: #888, $alpha: 0);
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:horizontal:hover {
+    background: rgba($color: #555, $alpha: 1);
+  }

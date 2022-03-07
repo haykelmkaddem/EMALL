@@ -1,0 +1,36 @@
+
+.search-input{
+    @extend .form-control;
+    @extend .mr-sm-2;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.checked {
+	color: #ff9f1a;
+}
+.rating {
+	margin-bottom: 15px;
+}
+
+.emall-input{
+    @extend .form-control;
+    border: none;
+    border-bottom: 2px solid $grey;
+    border-radius: 0px;
+    text-align:center;
+    outline:0px;
+    &:focus{
+        border-color:#CCC;
+        outline:0;
+        -webkit-box-shadow:none;
+        box-shadow:none;
+        
+    }
+    option {
+        border: none;
+        outline:0px;
+      }
+    
+    
+}

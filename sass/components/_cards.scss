@@ -1,0 +1,166 @@
+
+.card-boutique{
+
+    .card-img{ 
+            margin-top: 35px !important;  
+            margin-bottom: 35px !important;  
+            height: 80%;
+            vertical-align: middle;
+            margin-left: 0px;
+            &-fix{
+                height: 200px;
+                width: 100%;
+                padding: 10%;
+            }
+        }
+    .card-text{
+        overflow: hidden;
+        height:50px;
+    }
+}
+
+//PRODUCT CARD
+.card-product{
+
+    .card-img{ 
+            margin-top: 35px !important;  
+            margin-bottom: 35px !important;  
+            width: 80%;
+            margin-left: 10%;
+            border-top-left-radius:50px !important;
+            border-bottom-right-radius:50px !important;
+            border: 1px solid rgba(0,0,0,0);
+        }
+    .product-card-price{
+            span{
+                width: 20%;
+                display:block;
+                text-align: center;
+                margin-left: 40%;
+                color: $light;
+            }
+            .current-price{
+                background: $blue;
+                margin-top: .25em;
+            }
+            .real-price{
+                background: $red;
+                text-decoration: line-through;
+            }
+            
+    }
+    .card-body{
+        padding-top: 0rem !important;
+        padding-right: 1.25rem;
+        padding-bottom: 1.25rem;
+        padding-left: 1.25rem;
+    }
+    
+    .color {
+        vertical-align: middle;
+        display: inline-block;
+        height: 1em;
+        margin-right: 10px;
+        border-radius: 2px;
+        width: 1em;
+		
+            &:first-of-type {
+            margin-left: 20px;
+            }
+    }   
+    .orange {
+        background: #ff9f1a;
+    }
+    .green {
+        background: #85ad00;
+    }
+    .blue {
+        background: #0076ad;
+    }
+
+
+}
+
+.br-t-l{
+border-top-left-radius:50px !important;
+}
+.br-b-r{
+border-bottom-right-radius:50px !important;
+}
+
+
+//flip card
+
+.flip-card {
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #f1f1f1;
+	perspective: 1000px;
+	&:hover {
+		.flip-card-inner {
+			transform: rotateY(180deg);
+		}
+	}
+}
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+.flip-card-front {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	color: black;
+}
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	color: white;
+	transform: rotateY(180deg);
+}
+.simple-card-product{
+    .card-img{ 
+ 
+        width: 100%;
+        border-top-left-radius:50px !important;
+        border-bottom-right-radius:50px !important;
+        border: 1px solid rgba(0,0,0,0);
+        height: 50vh;
+    }
+
+    .card-body{
+        color: $darkergrey;
+        padding: 15px;
+        .product-name{
+            width: 100%;
+            float: left;
+
+        }
+        .price{
+            width: 100%;
+            float: left;
+        }
+    }
+
+ 
+
+}
+.card-profile-shodow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 100%;
+        padding: 30px;
+        margin-bottom: 10px;
+        color: $blue;
+        text-align: center;
+}

@@ -1,0 +1,12 @@
+.btn-emall{
+    @extend .btn;
+    border-bottom-right-radius:20px;
+    background-color: $red;
+    color:$light;
+    &-top-left-rounded{
+        @extend .btn-emall;
+        border-top-left-radius:20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
